@@ -1,0 +1,99 @@
+*, ::after, ::before {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+.header {
+	background-image: url("./images/Rectangle 3.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+}
+.description {
+	position: absolute;
+	top: 30%;
+	margin: auto;
+	padding: 2em;
+	max-width: 578px;
+}
+a.nav-link {
+	color: white;
+}
+.card-body {
+	position: absolute;
+	width: 80%;
+	border-radius: 8px;
+	background-color: white;
+	top: 70%;
+	text-align: center;
+	box-sizing: border-box;
+	height: 200px;
+	margin-bottom: 2rem;
+}
+.card-img {
+	height: 250px;
+	position: relative;
+	box-sizing: border-box;
+}
+.numbers {
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+.icons {
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	text-align: center;
+	align-items: center;
+}
+.second_block_text {
+	text-align: justify;
+	text-justify: inter-word;
+	width: 450px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.text {
+	margin-top: 3rem;
+}
+.container {
+	align-items: center;
+}
+.section_three, .section_four {
+	text-align: center;
+	align-items: center;
+	padding: 80px;
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+	.col {
+		margin-bottom: 3rem;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
