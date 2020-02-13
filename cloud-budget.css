@@ -2,42 +2,58 @@
 	box-sizing: border-box;
 	font-family: 'Lato', sans-serif;
 }
-.header {
+body {
+	overflow-x: hidden; 
+	width: 100vw;
+}
+section {
+	overflow-x: hidden;
+	overflow-y: visible;
+	
+}
+section.header {
 	background-image: url("./images/Rectangle 3.png");
 	background-size: cover;
+	background-size: auto;
 	background-position: center;
 	position: relative;
+	height: 782px;
+	width: 100vw;
 }
 .overlay {
 	position: absolute;
 	min-height: 100%;
 	min-width: 100%;
-	left: 0;
 	top: 0;
+	background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
 }
 .description {
 	position: absolute;
 	top: 30%;
 	margin: auto;
 	padding: 2em;
-	max-width: 578px;
+	max-width: 100%;
 }
 a.nav-link {
 	color: white;
 }
+.col {
+	position: relative;
+	margin-bottom: 2em;
+}
 .card-body {
 	position: absolute;
-	width: 80%;
+	width: 88%;
 	border-radius: 8px;
 	background-color: white;
 	top: 70%;
 	text-align: center;
-	box-sizing: border-box;
-	height: 200px;
-	margin-bottom: 2rem;
+	overflow-y: hidden;
+}
+.img-fluid {
+	position: relative;
 }
 .card-img {
-	height: 250px;
 	position: relative;
 	box-sizing: border-box;
 }
@@ -59,41 +75,48 @@ a.nav-link {
 	width: 450px;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	max-width: 100%;
 }
 .text {
 	margin-top: 3rem;
 }
-.container {
-	align-items: center;
-}
-.section_three, .section_four {
+
+section {
 	text-align: center;
 	align-items: center;
-	padding: 80px;
+	max-width: 100%;
+	flex-flow: row wrap;
+	padding: 0px;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+h1 {
+	word-wrap: break-word;
+}
+.text-white {
+	max-width: 540px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 
 @media (min-width: 576px) and (max-width: 767px) { 
+	section {
+		padding: 0px;
+		margin: 0px;
+	}
+	.container {
+		padding: 0px;
+	}
 	.col {
 		margin-bottom: 3rem;
 	}
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
-
 }
-
-
 @media (min-width: 992px) and (max-width: 1199px) {
-
 }
-
-
-@media (min-width: 1200px) {
-
-}
-
-
+@media (min-width: 1200px) {}
 
 
